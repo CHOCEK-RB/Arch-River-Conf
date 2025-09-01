@@ -1,0 +1,20 @@
+return {
+
+	require("plugins.completion.cmp"),
+	require("plugins.completion.luasnip"),
+	require("plugins.completion.autopairs"),
+	require("plugins.lsp.mason"),
+	require("plugins.lsp.lspconfig"),
+	require("plugins.git.gitsigns"),
+	require("plugins.git.lazygit"),
+	require("plugins.ui.colorscheme"),
+	require("plugins.ui.which-key"),
+	require("plugins.ui.lualine"),
+	require("plugins.ui.aerial"),
+	require("plugins.utils.oil"),
+	require("plugins.utils.mason-lspconfig"),
+	require("plugins.utils.conform"),
+	require("plugins.utils.treesitter"),
+	require("plugins.utils.mini"),
+	require("plugins.utils.dressing"),
+}
