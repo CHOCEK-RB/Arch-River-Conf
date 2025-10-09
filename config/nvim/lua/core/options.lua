@@ -1,44 +1,41 @@
----@diagnostic disable: undefined-global
-
 local opt = vim.opt
 local o = vim.o
 local g = vim.g
 
 o.laststatus = 3
-o.showmode = false
 o.splitkeep = "screen"
-
 o.clipboard = "unnamedplus"
-o.cursorline = true
-o.cursorlineopt = "number"
-
--- Indenting
 o.expandtab = true
 o.shiftwidth = 2
 o.smartindent = true
 o.tabstop = 2
 o.softtabstop = 2
-
-opt.fillchars = { eob = " " }
 o.ignorecase = true
 o.smartcase = true
 o.mouse = "a"
-
-o.number = true
-o.numberwidth = 2
-o.ruler = false
-
-opt.shortmess:append("sI")
-
-o.signcolumn = "yes"
 o.splitbelow = true
 o.splitright = true
 o.timeoutlen = 400
 o.undofile = true
-
 o.updatetime = 250
-opt.whichwrap:append("<>[]hl")
 
+opt.shortmess:append("sI")
+opt.whichwrap:append("<>[]hl")
+opt.fillchars = { eob = " " }
+opt.relativenumber = true
+opt.ruler = false
+opt.signcolumn = "yes"
+opt.numberwidth = 2
+opt.cursorline = true
+opt.cursorlineopt = "number"
+opt.winborder = "rounded"
+opt.list = true
+opt.showmode = false
+opt.termguicolors = true
+opt.smoothscroll = true
+
+g.mapleader = " "
+g.maplocalleader = " "
 g.loaded_node_provider = 0
 g.loaded_python3_provider = 0
 g.loaded_perl_provider = 0

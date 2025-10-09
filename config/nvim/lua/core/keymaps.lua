@@ -1,7 +1,5 @@
 local keymap = vim.keymap.set
 
--- --- Atajos Generales ---
-
 keymap("n", "<C-s>", ":w<CR>", { desc = "Guardar archivo" })
 keymap("i", "<C-s>", "<ESC>:w<CR>", { desc = "Guardar archivo" })
 
@@ -26,17 +24,17 @@ keymap("v", "<C-x>", '"+d', { desc = "Cut to system clipboard (Visual)" })
 
 keymap({ "n", "v" }, "<C-v>", '"+p', { desc = "Paste from system clipboard" })
 
--- Oil (Explorador de archivos)
--- -----------------------------------------------------------------------------
+keymap("n", "<leader>bn", "<cmd>bnext<CR>", { desc = "Next Buffer" })
+keymap("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Previous Buffer" })
+keymap("n", "<leader>bb", "<cmd>buffer #<CR>", { desc = "Last Buffer" })
+keymap("n", "<leader>bl", "<cmd>buffers<CR>", { desc = "List Buffers" })
+
+-- Oil
 
 keymap("n", "-", "<CMD>Oil<CR>", { desc = "Abrir directorio con Oil" })
 
 -- Mini
 
-keymap("n", "<leader>ff", function()
-	require("mini.picker").pick_files({ prompt = "Buscar archivos" })
-end, { desc = "Buscar Archivos (Find Files)" })
+keymap("n", "<leader>ff", ":Pick files<CR>", { desc = "Buscar Archivos (Find Files)" })
 
-keymap("n", "<leader>fg", function()
-	require("mini.picker").grep_live({ prompt = "Buscar por Texto" })
-end, { desc = "Buscar por Texto (Grep)" })
+keymap("n", "<leader>fg", ":Pick grep_live<CR>", { desc = "Buscar por Texto (Grep)" })

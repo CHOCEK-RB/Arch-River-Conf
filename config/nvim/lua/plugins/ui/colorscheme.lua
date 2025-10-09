@@ -4,8 +4,18 @@
 --}
 
 return {
-	"folke/tokyonight.nvim",
-	lazy = false,
-	priority = 1000,
-	opts = {},
+	"rebelot/kanagawa.nvim",
+	opts = {
+		colors = {
+			theme = {
+				all = {
+					ui = {
+						bg_gutter = "none",
+					},
+				},
+			},
+		},
+	},
 }
+
+-- setup must be called before loading

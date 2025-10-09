@@ -11,6 +11,9 @@ return {
 				typescript = { "prettier" },
 				svelte = { "prettier" },
 				json = { "prettier" },
+				bash = { "shfmt", "shellcheck" },
+				zsh = { "shfmt", "shellcheck" },
+				sh = { "shfmt", "shellcheck" },
 			},
 
 			format_on_save = {

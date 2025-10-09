@@ -2,8 +2,11 @@ return {
 	"echasnovski/mini.nvim",
 	version = false,
 	config = function()
-		require("mini.starter").setup()
 		require("mini.comment").setup({})
+
+		local MiniPick = require("mini.pick")
+		MiniPick.setup({})
+
 		require("mini.indentscope").setup({
 			symbol = "│",
 		})

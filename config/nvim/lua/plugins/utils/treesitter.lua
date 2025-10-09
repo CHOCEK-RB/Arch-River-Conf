@@ -25,6 +25,8 @@ return {
 			"rust",
 			"xml",
 			"yaml",
+			"sh",
+			"yuck",
 		},
 	},
 }
